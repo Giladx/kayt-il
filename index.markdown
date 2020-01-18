@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 ---
 
 <br> <br> <br> <br>
