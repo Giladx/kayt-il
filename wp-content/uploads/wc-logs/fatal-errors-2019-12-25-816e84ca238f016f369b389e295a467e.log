@@ -1,0 +1,105 @@
+2019-12-25T13:53:38+00:00 CRITICAL Uncaught Error: Call to undefined function bp_has_groups() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php:16
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/templates.php(37): include()
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin_tabs/groups.php(24): bpge_view('admin/groups_li...', Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-admin/includes/template.php(1641): BPGE_ADMIN_GROUPS->display(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin.php(301): do_settings_sections('groups')
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): BPGE_ADMIN->admin_page('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php on line 16
+
+2019-12-25T13:56:08+00:00 CRITICAL Uncaught Error: Call to undefined function bp_has_groups() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php:16
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/templates.php(37): include()
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin_tabs/groups.php(24): bpge_view('admin/groups_li...', Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-admin/includes/template.php(1641): BPGE_ADMIN_GROUPS->display(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin.php(301): do_settings_sections('groups')
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): BPGE_ADMIN->admin_page('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php on line 16
+
+2019-12-25T13:56:21+00:00 CRITICAL Uncaught Error: Call to undefined function bp_has_groups() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php:16
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/templates.php(37): include()
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin_tabs/groups.php(24): bpge_view('admin/groups_li...', Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-admin/includes/template.php(1641): BPGE_ADMIN_GROUPS->display(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/core/admin.php(301): do_settings_sections('groups')
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): BPGE_ADMIN->admin_page('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/views/admin/groups_list.php on line 16
+
+2019-12-25T13:58:11+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+
+2019-12-25T13:58:15+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+
+2019-12-25T13:58:17+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+
+2019-12-25T13:58:19+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+
+2019-12-25T13:58:21+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+
+2019-12-25T13:58:26+00:00 CRITICAL Uncaught Error: Call to undefined function bp_is_group() in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php:266
+Stack trace:
+#0 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): bpge_adminbar_menu_link(Object(WP_Admin_Bar))
+#1 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home2/kaytilc1/micro.kayt-il.com/wp-includes/admin-bar.php(86): do_action_ref_array('admin_bar_menu', Array)
+#4 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(288): wp_admin_bar_render('')
+#5 /home2/kaytilc1/micro.kayt-il.com/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home2/kaytilc1/micro.kayt-il.com/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#7 /home2/kaytilc1/micro.kayt-il.com/wp-admin/admin-header.php(245): do_action('in_admin_header')
+#8 /home2/kaytilc1/micro.kayt-il. in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/buddypress-groups-extras/bpge.php on line 266
+

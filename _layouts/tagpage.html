@@ -1,0 +1,46 @@
+---
+layout: default # This template inherits from my basic page template
+---
+<style>
+p {font-size:18px}
+@media screen and (min-width: 240px) {
+.page-content{padding: 10%; padding-right: 5%;padding-left: 5%;}}
+@media screen and (min-width: 640px) {
+.page-content{padding: 10%; padding-right: 10%;padding-left: 10%;}}
+@media screen and (min-width: 980px) {
+.page-content{padding: 10%; padding-right: 15%;padding-left: 15%;}}
+@media screen and (min-width: 1280px) {
+.page-content{padding: 10%; padding-right: 25%;padding-left: 25%;}}
+@media screen and (min-width: 1440px) {
+.page-content{padding: 10%; padding-right: 25%;padding-left: 25%;}}
+@media screen and (min-width: 1920px) {
+.page-content{padding: 10%; padding-right: 30%;padding-left: 30%;}}
+</style>
+
+<!-- We're going to give each page a tag when we create it.
+This will be the title -->
+<style>
+.content{padding: 10%}
+</style>
+<div class="page-content">
+<h1>{{ page.tag | capitalize }}</h1>
+
+<ul>
+    {% for post in site.tags[page.tag] %}
+    <li>
+        {{ post.date | date: "%m %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h3>ענן תגיות</h3>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tags/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 2 | plus: 100  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
+</div>

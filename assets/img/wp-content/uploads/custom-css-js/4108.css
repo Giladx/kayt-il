@@ -1,0 +1,30 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+.blog-single-post-has-not-thumbnail .blog-single-content.pull-up {
+    margin-top: 0;
+    padding-top: 10em;
+}
+
+body.single-post .content {
+    font-family: 'Rubik';
+}
+.logo-default{width: 50px;}
+.main-header .navbar-brand {
+    padding: 10px 0;
+    max-width: none !important;
+}
+[data-mobile-nav-style=modern] .navbar-collapse-clone .nav-trigger .bar {
+    background-color: #000;
+}</style>
+<!-- end Simple Custom CSS and JS -->

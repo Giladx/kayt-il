@@ -1,0 +1,134 @@
+---
+layout: default
+---
+<style>
+p {font-size:18px}
+@media screen and (min-width: 240px) {
+.page-content{padding: 10%; padding-right: 5%;padding-left: 5%;}}
+@media screen and (min-width: 640px) {
+.page-content{padding: 10%; padding-right: 10%;padding-left: 10%;}}
+@media screen and (min-width: 980px) {
+.page-content{padding: 10%; padding-right: 15%;padding-left: 15%;}}
+@media screen and (min-width: 1280px) {
+.page-content{padding: 10%; padding-right: 25%;padding-left: 25%;}}
+@media screen and (min-width: 1440px) {
+.page-content{padding: 10%; padding-right: 25%;padding-left: 25%;}}
+@media screen and (min-width: 1920px) {
+.page-content{padding: 10%; padding-right: 30%;padding-left: 30%;}}
+</style>
+
+<div class="page-content">
+<!--<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+     Include your post title, byline, date, and other info inside the header here. 
+</div>-->
+  <h1>
+    {{ page.title }}
+  </h1>
+
+  <span class="post-date">
+    {% assign m = page.date | date: "%-m" %}
+    {{ page.date | date: "%-d" }}
+    {% case m %}
+    {% when '1' %}ינואר
+    {% when '2' %}פברואר
+    {% when '3' %}מרץ
+    {% when '4' %}אפריל
+    {% when '5' %}מאי
+    {% when '6' %}יוני
+    {% when '7' %}יולי
+    {% when '8' %}אוגוסט
+    {% when '9' %}ספטמבר
+    {% when '10' %}אוקטובר
+    {% when '11' %}נובמבר
+    {% when '12' %}דצמבר
+    {% endcase %}
+    {{ page.date | date: "%Y" }}
+    נכתב ע"י
+    {% if page.author %}
+    {{ page.author }}
+    {% else %}
+    {{ site.author }}
+    {% endif %}
+  </span>
+
+  {% if page.image %}
+    <div class="featured-image">
+      <img src="{{ site.github.url }}/assets/img{{ page.image }}">
+    </div>
+  {% endif %}
+
+  <article>
+    {{ content }}
+  </article>
+
+  <div class="post-share" style="font-size:35px;">
+    <div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
+    <div class="sharing-icons">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="related">
+    <h2>{{ site.data.settings.related_posts }}</h2>
+    {% assign listed_posts_urls = page.url | split: ' ' %}
+    <ul class="related-posts">
+      {% for tag in page.tags %}
+        {% for post in site.tags[tag] limit:2 %}
+          {% if listed_posts_urls contains post.url %}
+          {% else %}
+            <li>
+              <h3>
+                <a href="{{ site.github.url }}{{ post.url }}">
+                  <div class="related-thumbnail">
+                    {% if post.image %}
+                      <img src="{{ site.url }}{{ site.baseurl }}assets/img{{ post.image }}" width="250" alt="related">
+                    {% endif %}
+                  </div>
+                  <div class="related-title">
+                    {{ post.title }}
+                  </div>
+                  <small>{{ post.date | date: "%-d" }}
+                    {% case m %}
+                    {% when '1' %}ינואר
+                    {% when '2' %}פברואר
+                    {% when '3' %}מרץ
+                    {% when '4' %}אפריל
+                    {% when '5' %}מאי
+                    {% when '6' %}יוני
+                    {% when '7' %}יולי
+                    {% when '8' %}אוגוסט
+                    {% when '9' %}ספטמבר
+                    {% when '10' %}אוקטובר
+                    {% when '11' %}נובמבר
+                    {% when '12' %}דצמבר
+                    {% endcase %}
+                    {{ post.date | date: "%-Y" }}
+                  </small>
+                </a>
+              </h3>
+            </li>
+            {% assign listed_posts_urls = listed_posts_urls | push: post.url %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h3>ענן תגיות</h3>
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tags/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 2 | plus: 100  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
+
+  {% if site.data.settings.disqus.comments %}
+    {% include disqus.html %}
+  {% endif %}
+
+</div>

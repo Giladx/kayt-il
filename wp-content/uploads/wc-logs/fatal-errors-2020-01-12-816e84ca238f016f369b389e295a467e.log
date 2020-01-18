@@ -1,0 +1,6 @@
+2020-01-12T22:04:47+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting ';' or '{' in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/directories/lib/application/Component/WordPress/WordPressComponent.php on line 330
+
+2020-01-12T22:04:48+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting ';' or '{' in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/directories/lib/application/Component/WordPress/WordPressComponent.php on line 330
+
+2020-01-12T22:04:53+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN), expecting ';' or '{' in /home2/kaytilc1/micro.kayt-il.com/wp-content/plugins/directories/lib/application/Component/WordPress/WordPressComponent.php on line 330
+

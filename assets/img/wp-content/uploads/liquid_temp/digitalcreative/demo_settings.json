@@ -1,0 +1,15 @@
+{
+	"home_page_title": "Homepage - Default",
+	"blog_page_title": "Blog",
+	"menus": {
+		"primary": "Primary"
+	},
+	"templates": {
+		"header-template": "Main Header",
+		"footer-template": "Main Footer - Main Demo"
+	},
+	"content_plugins": {
+		"ave-core": "Ave Core",
+		"ave-portfolio": "Ave Portfolio"
+	}
+}

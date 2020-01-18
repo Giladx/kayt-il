@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+{% include head.blog.html %}
+<body class="blog" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+<div id="wrap">
+
+{% include header.blog.html %}
+<main id="content" class="content">
+    {{ content }}
+</main>
+  {% include footer.html %}
+</div><!-- /#wrap -->
+
+<script src="/assets/vendors/jquery.min.js"></script>
+<script src="/assets/js/theme-vendors.js"></script>
+<script src="/assets/js/theme.min.js"></script>
+
+</body>
+</html>
